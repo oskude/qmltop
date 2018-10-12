@@ -10,8 +10,8 @@ Canvas {
 	onPaint: {
 		var ctx = getContext("2d") // TODO: move to init
 		ctx.fillStyle = this.fadColor
-		ctx.fillRect(0, 0, this.width, 32)
+		ctx.fillRect(0, 0, this.width, this.height)
 		ctx.fillStyle = this.barColor
-		ctx.fillRect(0, 0, this.width * this.value, 32)
+		ctx.fillRect(0, 0, this.width * this.value, this.height)
 	}
 }
